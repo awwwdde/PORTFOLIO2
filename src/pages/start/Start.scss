@@ -1,0 +1,31 @@
+.start{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-area{
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_title{
+            font-weight: 700;
+        }
+        &_subtitle{
+            padding: 30px 0;
+            
+        }
+        &_button{
+            max-width: 175px;
+            max-height: 90px;
+            box-sizing: border-box;
+            border: 5px solid rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        &_button:hover{
+            color: #1b1b1b;
+            background-color: white;
+        }
+    }
+}

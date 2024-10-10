@@ -1,0 +1,41 @@
+* {
+    background: #1C1B1B;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    box-sizing: border-box;
+    font-family: Monaspace Krypton;
+    color: rgb(255, 255, 255);
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    user-select: none;
+    pointer-events: none;
+  }
+  .blink {
+    animation: blink 1000ms infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
