@@ -5,11 +5,15 @@
     align-items: center;
     margin: 0 30px;
     &-text{
+        
         font-weight: 700;
-        &_first{}
+        &_first{font-size: 20px;}
         &_second{
             padding: 50px 0;
+            font-size: 20px;
         }
-        &_third{}
+        &_third{
+            font-size: 20px;
+        }
     }
 }
