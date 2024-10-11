@@ -5,8 +5,8 @@ function Main() {
   const options = [ 'Next', 'Back' ]; // swapped order
   const texts = [
     'I am very happy to see you here!',
-    'Regarding my education I can say that I finished 9 grades of school in the direction of physics and mathematics, entered the college 26KADR on the course Software Developer. In parallel, I took additional courses related to web design.',
-    'lox',
+    'Hi 👋, Im Vladislav or awwwdde, a Frontend Developer with a passion for creating attractive and functional interfaces. In my spare time, I am passionate about creating designs for apps and websites, as well as developing game modifications. My goal is to create products that delight users and make their lives easier.',
+    'Take a look around to see my projects and skills in action, and lets create something amazing together. 🧡',
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -62,14 +62,14 @@ function Main() {
     <div className="main">
       <div className="main-text">
         <div className="main-text_first">
-          <div className="main-text_first__title">Oh , Hi! Welcome to my portfolio site!</div>
+          <div className="main-text_first__title"> Welcome to my portfolio site!</div>
           <div className="main-text_first__subtitle">
             {displayedText}
             <span className="blink" style={{ fontSize: 16 }}>|</span>
           </div>
         </div>
         <div className="main-text_second">
-          <div className="main-text_second__title">Choose the variant<span className="blink" style={{ fontSize: 16 }}>|</span></div>
+          <div className="main-text_second__title">Choose the variant</div>
         </div>
         <div className="main-text_third">
           {activeIndex < texts.length - 1 && ( // swapped condition
