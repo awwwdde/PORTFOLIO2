@@ -5,7 +5,7 @@ function Main() {
   const options = [ 'Next', 'Back' ]; // swapped order
   const texts = [
     'I am very happy to see you here!',
-    'Hi 👋, Im Vladislav or awwwdde, a Frontend Developer with a passion for creating attractive and functional interfaces. In my spare time, I am passionate about creating designs for apps and websites, as well as developing game modifications. My goal is to create products that delight users and make their lives easier.',
+    'Hi 👋, Im Vladislav or awwwdde, a Frontend Developer with a passion for creating attractive and functional interfaces. In my spare time, I am passionate about creating designs for apps and websites, as well as developing game modifications.',
     'Take a look around to see my projects and skills in action, and lets create something amazing together. 🧡',
   ];
 

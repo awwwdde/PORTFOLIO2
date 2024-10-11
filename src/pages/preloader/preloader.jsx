@@ -22,7 +22,7 @@ function Preloader() {
     <div className="preloader">
       <div className="preloader-text">
         <div className="preloader-text_first">
-          <div className="preloader-text_first__title">VLADISLAV SOIMA. <span style={{ fontWeight: 100 }}>VERSION: 1 / 0 / 01</span></div>
+          <div className="preloader-text_first__title">VLADISLAV SOIMA. <span style={{ fontWeight: 100 }}>VERSION: 1.0.01</span></div>
           <div className="preloader-text_first__subtitle">AWWWDDE INC. <span style={{ fontWeight: 100 }}>YEAR: 2024</span></div>
         </div>
         <div className="preloader-text_second">
