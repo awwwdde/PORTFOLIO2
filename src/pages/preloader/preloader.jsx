@@ -26,9 +26,9 @@ function Preloader() {
           <div className="preloader-text_first__subtitle">AWWWDDE INC. <span style={{ fontWeight: 100 }}>YEAR: 2024</span></div>
         </div>
         <div className="preloader-text_second">
-          <div className="preloader-text_second__title" style={{ fontWeight: 100 }}>DOWNLOADING FONTS <span className="blink">_</span></div>
-          <div className="preloader-text_second__title" style={{ fontWeight: 100 }}>DOWNLOADING ASSETS <span className="blink">_</span></div>
-          <div className="preloader-text_second__title" style={{ fontWeight: 100 }}>CHECKING ERRORS <span className="blink">_</span></div>
+          <div className="preloader-text_second__title" style={{ fontWeight: 100 }}>DOWNLOADING FONTS <span className="blink">|</span></div>
+          <div className="preloader-text_second__title" style={{ fontWeight: 100 }}>DOWNLOADING ASSETS <span className="blink">|</span></div>
+          <div className="preloader-text_second__title" style={{ fontWeight: 100 }}>CHECKING ERRORS <span className="blink">|</span></div>
         </div>
         <div className="preloader-text_third">
           <div className="preloader-text_third__title">COMPLETED: <span style={{ fontWeight: 100 }}>{progress} / 100</span></div>
