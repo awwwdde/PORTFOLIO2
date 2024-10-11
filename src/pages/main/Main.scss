@@ -1,42 +1,48 @@
-.main{
+.main {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    &-text{
-        max-width: 530px;
+    
+    &-text {
+        width: 530px; /* Устанавливаем фиксированную ширину */
+        max-width: 530px; /* Максимальная ширина */
         display: flex;
         flex-direction: column;
-        &_first{
+        overflow-wrap: break-word; /* Перенос длинных слов */
+        
+        &_first {
             padding: 30px 0;
-            &__title{
+            
+            &__title {
                 font-weight: 700;
                 font-size: 20px;
             }
-            &__subtitle{
+            
+            &__subtitle {
                 font-size: 20px;
                 font-weight: 100;
             }
         }
-        &_second{
-            
-            &__title{
+        
+        &_second {
+            &__title {
                 color: #5C5C5C;
                 font-weight: 100;
                 font-size: 14px;
             }
         }
-        &_third{
+        
+        &_third {
             padding: 30px 0;
             
-            
-            &__option{
-                
+            &__option {
                 display: flex;
                 cursor: pointer;
                 font-size: 20px;
             }
-            &__option:hover .arrow{
+            
+            &__option:hover .arrow {
                 display: inline-block;
             }
         }

@@ -19,3 +19,28 @@
       opacity: 1;
     }
   }
+  .print {
+    animation: print 2s forwards;
+  }
+  
+  .erase {
+    animation: erase 2s forwards;
+  }
+  
+  @keyframes print {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes erase {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
