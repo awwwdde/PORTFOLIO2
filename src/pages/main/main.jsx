@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Main.scss';
 
 function Main() {
-  const options = [ 'Next', 'Back' ]; // swapped order
+  const options = [ 'Next', 'Back' ]; 
   const texts = [
     'I am very happy to see you here!',
     'Hi 👋, Im Vladislav or awwwdde, a Frontend Developer with a passion for creating attractive and functional interfaces. In my spare time, I am passionate about creating designs for apps and websites, as well as developing game modifications.',

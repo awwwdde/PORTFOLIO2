@@ -72,21 +72,21 @@
   grid-area: box9;
 }
 
-/* Медиа-запросы для мобильных устройств */
+
 @media (max-width: 500px) {
   .about-container {
     display: flex;
     flex-direction: column;
-    align-items: center; // Центрируем блоки по горизонтали
-    width: 100vw; // Занимает всю ширину экрана
-    height: auto; // Высота определяется содержимым
-    overflow-y: auto; // Позволяет прокручивать блоки
-    padding: 0; // Убираем отступы
+    align-items: center; 
+    width: 100vw; 
+    height: auto; 
+    overflow-y: auto; 
+    padding: 0; 
   }
 
   .about-container__box {
-    width: 90vw; // Занимает 90% ширины экрана, оставляя равные отступы
-    height: 80vh; // Занимает 80% высоты экрана
-    margin-bottom: 20px; // Промежуток между блоками
+    width: 90vw; 
+    height: 80vh; 
+    margin-bottom: 20px; 
   }
 }

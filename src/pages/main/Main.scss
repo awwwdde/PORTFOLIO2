@@ -5,11 +5,11 @@
     align-items: center;
     
     &-text {
-        width: 530px; /* Устанавливаем фиксированную ширину */
-        max-width: 530px; /* Максимальная ширина */
+        width: 530px; 
+        max-width: 530px; 
         display: flex;
         flex-direction: column;
-        overflow-wrap: break-word; /* Перенос длинных слов */
+        overflow-wrap: break-word; 
         
         &_first {
             padding: 30px 0;
@@ -61,7 +61,7 @@
             padding: 0 15%;
             display: flex;
             flex-direction: column;
-            overflow-wrap: break-word; /* Перенос длинных слов */
+            overflow-wrap: break-word; 
             
             &_first {
                 padding: 30px 0;

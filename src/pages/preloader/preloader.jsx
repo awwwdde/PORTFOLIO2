@@ -12,10 +12,10 @@ function Preloader() {
         setProgress((prevProgress) => prevProgress + 1);
       } else {
         clearInterval(intervalId);
-        navigate('/start', { replace: true }); // Redirect to start.jsx page
+        navigate('/start', { replace: true }); 
       }
     }, 50);
-    return () => clearInterval(intervalId); // Add this cleanup function
+    return () => clearInterval(intervalId); 
   }, [progress, navigate]);
 
   return (
