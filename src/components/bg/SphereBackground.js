@@ -118,7 +118,7 @@ const SphereBackground = () => {
       const height = window.innerHeight;
       renderer.setSize(width, height);
       camera.aspect = width / height;
-      camera.updateProjectionMatrix();
+      camera.updateProjectionMatrix ();
     };
 
     window.addEventListener('resize', handleResize);
@@ -126,7 +126,9 @@ const SphereBackground = () => {
     // Очистка на размонтировании
     return () => {
       window.removeEventListener('resize', handleResize);
-      mountRef.current.removeChild(renderer.domElement);
+      if (mountRef.current) {
+        mountRef.current.removeChild(renderer.domElement);
+      }
     };
   }, []);
 

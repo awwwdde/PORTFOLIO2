@@ -1,0 +1,32 @@
+.notf{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @media (max-width: 768px) { // adjust styles for mobile devices
+        flex-direction: column;
+        padding: 20px;
+    }
+    &-text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+        &__title{
+            background: transparent;
+            font-size: 48px; // adjust font size for mobile devices
+            font-weight: 700;
+            z-index: 2;
+        }
+        &__subtitle{
+            font-size: 18px; // adjust font size for mobile devices
+            background: transparent;
+            font-weight: 100;
+            z-index: 2;
+        }
+    }
+}

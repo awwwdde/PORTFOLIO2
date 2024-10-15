@@ -24,6 +24,7 @@
   background-color: transparent;
 
   &__box {
+    
     border-radius: 25px;
     background-color: #18181825;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -45,11 +46,13 @@
 
 .box1 {
   grid-area: box1;
-  background: #A5B68D;
+  // background: #A5B68D;
 }
 
 .box2 {
   grid-area: box2;
+  font-weight: 1000;
+  
 }
 
 .box3 {
@@ -62,6 +65,8 @@
 
 .box5 {
   grid-area: box5;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .box6 {
@@ -70,7 +75,7 @@
 
 .box7 {
   grid-area: box7;
-  background: #A5B68D;
+  
 }
 
 .box8 {
