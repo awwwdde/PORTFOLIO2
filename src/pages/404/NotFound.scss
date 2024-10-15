@@ -28,5 +28,18 @@
             font-weight: 100;
             z-index: 2;
         }
+        &__link{
+            padding-top: 30px;
+            font-size: 18px; // adjust font size for mobile devices
+            background: transparent;
+            font-weight: 100;
+            z-index: 2;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        &__link:hover{
+            color: #85BCA8;
+        }
     }
 }

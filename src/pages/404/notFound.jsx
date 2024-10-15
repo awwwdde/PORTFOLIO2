@@ -9,7 +9,8 @@ function notFound() {
       <SphereBackground />
         <div className="notf-text__title">404</div>
         <div className="notf-text__subtitle">not found</div>
-        <Link to="/start" className="notf-text__subtitle">Go back to homepage</Link>
+        
+        <Link to="/start" className="notf-text__link">start page</Link>
       </div>
     </div>
   )
