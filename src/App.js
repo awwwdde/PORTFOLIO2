@@ -5,6 +5,7 @@ import Portfolio from './pages/main/main.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './graphics/styles/style.scss'
 import About from './pages/about/About.jsx';
+import NotFound from './pages/404/notFound'
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
         <Route path="/start" element={<Start />} />
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/portfolio/me" element={<About/>}/>
+        <Route element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
     </div>

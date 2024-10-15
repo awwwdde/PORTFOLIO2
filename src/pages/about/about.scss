@@ -7,6 +7,7 @@
 }
 
 .about-container {
+  font-family: Futura, sans-serif;
   width: 95vw;
   height: 95vh;
   display: grid;
@@ -19,17 +20,23 @@
   margin: 0 auto;
   overflow: hidden;
   padding: 20px;
+  z-index: 1;
+  background-color: transparent;
 
   &__box {
     border-radius: 25px;
-    background-color: #2C2C2C;
+    background-color: #18181825;
     transition: background-color 0.3s ease, transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     cursor: pointer;
-
+    backdrop-filter: blur(30px);
+    &-img{
+      background: none;
+    }
     &:hover {
       transform: scale(1.02);
     }
@@ -38,6 +45,7 @@
 
 .box1 {
   grid-area: box1;
+  background: #A5B68D;
 }
 
 .box2 {
@@ -62,6 +70,7 @@
 
 .box7 {
   grid-area: box7;
+  background: #A5B68D;
 }
 
 .box8 {

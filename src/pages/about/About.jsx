@@ -1,10 +1,16 @@
 import React from 'react';
 import './about.scss';
+import logo from '../../graphics/images/logo.svg'
+import SphereBackground from '../../components/bg/SphereBackground';
 const About = () => {
   return (
     <div className="about">
+      
       <div className="about-container">
-        <div className="about-container__box box1"></div>
+        <SphereBackground/>
+        <div className="about-container__box box1">
+          <img src={logo} alt="" className="about-container__box-img" />
+        </div>
         <div className="about-container__box box2">AWWWDDE</div>
         <div className="about-container__box box3">Skills</div>
         <div className="about-container__box box4">About</div>
