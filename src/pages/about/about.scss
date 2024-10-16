@@ -19,9 +19,9 @@
       z-index: 2; // На переднем плане
       padding: 20px; // Отступы
       backdrop-filter: blur(30px);
-      background: rgba(255, 255, 255, 0.145);
+      background-color: #2c2c2ca5;
       border-radius: 25px;
-      color: black;
+      color: rgb(255, 255, 255);
       text-align: justify;
       margin-bottom: 20px; // Отступ снизу
       max-width: 600px; // Максимальная ширина блока
@@ -39,7 +39,7 @@
     z-index: 2; // На переднем плане
     padding: 15px 15px; // Отступы сверху и снизу
     backdrop-filter: blur(30px);
-    background: rgba(255, 255, 255, 0.145);
+    background-color: #2c2c2ca5;
     border-radius: 25px;
     &__logo {
       width: 50px; // Ширина логотипа
