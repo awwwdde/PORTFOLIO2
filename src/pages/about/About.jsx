@@ -6,9 +6,9 @@ import SphereBackground from '../../components/bg/SphereBackground';
 const About = () => {
   // Массивы с текстом и названиями меню
   const texts = [
-    "Pellentesque iaculis eleifend nisi, at ullamcorper ante ultrices eu. Aliquam felis nibh, lacinia laoreet leo pharetra, gravida dapibus ligula. Nulla eu est id lectus pharetra congue et et magna. Donec hendrerit tellus ac nibh pellentesque maximus. Sed lobortis sodales orci nec maximus. Quisque non quam tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus facilisis libero elit, non ultricies nulla molestie et. Nunc nibh ipsum, pretium et molestie pharetra, rutrum quis nisi. Cras ornare dictum nibh non imperdiet. Proin lobortis mi nec nibh iaculis iaculis. Vestibulum at congue mi. Sed ut tellus convallis, condimentum leo ultrices, tristique nibh. Suspendisse sed dui lacus.",
-    "Это второй текст.",
-    "Это третий текст."
+    "About me",
+    "My portfolio",
+    "Contact"
   ];
 
   const menuItems = [
