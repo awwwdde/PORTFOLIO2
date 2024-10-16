@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import './Main.scss';
 
 function Main() {
-  const options = [ 'Next', 'Back' ]; 
+  const navigate = useNavigate(); 
+  const options = ['Next', 'Back', 'More']; 
   const texts = [
     'I am very happy to see you here!',
     'Hi 👋, Im Vladislav or awwwdde, a Frontend Developer with a passion for creating attractive and functional interfaces. In my spare time, I am passionate about creating designs for apps and websites, as well as developing game modifications.',
@@ -41,21 +43,25 @@ function Main() {
   }, [isDeleting, displayedText]);
 
   const handleNext = () => {
-    if (activeIndex > 0 && !isDeleting) { // swapped condition
+    if (activeIndex < texts.length - 1 && !isDeleting) {
       setIsDeleting(true);
       setTimeout(() => {
-        setActiveIndex(activeIndex - 1); // decrement index
+        setActiveIndex(activeIndex + 1);
       }, 500);
     }
   };
 
   const handleBack = () => {
-    if (activeIndex < texts.length - 1 && !isDeleting) { // swapped condition
+    if (activeIndex > 0 && !isDeleting) {
       setIsDeleting(true);
       setTimeout(() => {
-        setActiveIndex(activeIndex + 1); // increment index
+        setActiveIndex(activeIndex - 1);
       }, 500);
     }
+  };
+
+  const handleMore = () => {
+    navigate('/portfolio/me'); 
   };
 
   return (
@@ -72,16 +78,22 @@ function Main() {
           <div className="main-text_second__title">Choose the variant</div>
         </div>
         <div className="main-text_third">
-          {activeIndex < texts.length - 1 && ( // swapped condition
+          {activeIndex > 0 && (
             <span className="main-text_third__option" onClick={handleBack}>
+              <span className="arrow"> &lt; </span>
+              {options[1]} {/* Back */}
+            </span>
+          )}
+          {activeIndex < texts.length - 1 && (
+            <span className="main-text_third__option" onClick={handleNext}>
               <span className="arrow"> &gt; </span>
               {options[0]} {/* Next */}
             </span>
           )}
-          {activeIndex > 0 && ( // swapped condition
-            <span className="main-text_third__option" onClick={handleNext}>
-              <span className="arrow"> &lt; </span>
-              {options[1]} {/* Back */}
+          {activeIndex === texts.length - 1 && (
+            <span className="main-text_third__option" onClick={handleMore}>
+              <span className="arrow"> &gt; </span>
+              {options[2]} {/* More */}
             </span>
           )}
         </div>
