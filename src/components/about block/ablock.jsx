@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Ablock.module.scss'; // Import styles
+import styles from './Ablock.module.scss'; 
 
 const Ablock = () => {
     return (
