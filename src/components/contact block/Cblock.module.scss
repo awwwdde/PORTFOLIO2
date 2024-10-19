@@ -29,3 +29,11 @@
 .link:hover{
     color: #609db1;
 }
+@media (max-width: 375px){
+    .text {
+        padding: 10px 0;
+        background-color: transparent;
+        font-size: 12px;
+        text-align: justify;
+    }
+  }

@@ -31,4 +31,8 @@
         font-size: 14px;
     }
   }
-  
+  @media (max-width: 375px){
+    *{
+        font-size: 10px;
+    }
+  }
