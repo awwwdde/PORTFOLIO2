@@ -17,10 +17,10 @@ const Cblock = () => {
                 Email: aufjakegutlan@gmail.com
             </p>
             <p className={styles.text}>
-                click: <a href="https://t.me/adolfvav" target="_blank" rel="noopener noreferrer">Telegram</a>
+                click: <a href="https://t.me/adolfvav" target="_blank" rel="noopener noreferrer" className={styles.link}>Telegram</a>
             </p>
             <p className={styles.text}>
-                click: <a href="https://github.com/awwwdde" target="_blank" rel="noopener noreferrer">Github</a>
+                click: <a href="https://github.com/awwwdde" target="_blank" rel="noopener noreferrer" className={styles.link}>Github</a>
             </p>
         </div>
     );
