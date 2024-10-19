@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './about.scss';
 import logo from '../../graphics/images/logo.svg'; // Импортируем логотип
 import SphereBackground from '../../components/bg/SphereBackground';
-
+import Ablock from '../../components/about block/ablock';
 const About = () => {
   // Массивы с текстом и названиями меню
   const texts = [
-    "About me",
+    <Ablock/>,
     "My portfolio",
     "Contact"
   ];

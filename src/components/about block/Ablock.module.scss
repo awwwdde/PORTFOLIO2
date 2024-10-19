@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent; // Задний фон убран
+    padding: 0 15px; // Отступы справа и слева
+    box-sizing: border-box; // Учитываем отступы в ширине
+}
+
+.title {
+    background-color: transparent;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.image {
+    background-color: transparent;
+    max-width: 250px; // Изменено на 100% для адаптивности
+    height: 200px;
+}
+
+.text {
+    padding: 30px 0;
+    background-color: transparent;
+    font-size: 16px;
+    text-align: justify;
+}
