@@ -8,7 +8,7 @@ const projectsData = [
     title: 'AWWWDDE. Logo',
     description: 'The logo created for my portfolio, as well as to represent my work, includes the first two letters of my nickname: A and W.',
     stack: 'AI, PH',
-    link: 'https://dribbble.com/shots/25041571-awwwdde-Personal-Logo', // Ссылка на проект
+    link: 'https://dribbble.com/shots/25041571-awwwdde-Personal-Logo', 
   },
   {
     id: 2,
@@ -16,23 +16,23 @@ const projectsData = [
     title: 'AWWWDDE. Portfolio website',
     description: 'This site I created and am still creating for my portfolio and also to pump up my skills, it includes different styles as I am learning new things.',
     stack: 'React, SASS, threejs',
-    link: 'https://github.com/awwwdde/awwwdde-portfolio-2', // Ссылка на проект
+    link: 'https://github.com/awwwdde/awwwdde-portfolio-2', 
   },
   {
     id: 3,
-    gif: 'https://example.com/project3.gif',
-    title: '26STUDIO design',
-    description: 'DEsign',
-    stack: 'Pixso, Figma, AI',
-    link: 'https://example.com/project3', // Ссылка на проект
+    gif: 'https://i.imgur.com/OaAa3wC.png',
+    title: 'FACHWERKHAUS',
+    description: 'website for a construction company specializing in the construction of private houses in fachwerk style. (Training project)',
+    stack: 'Figma, React, SASS, GULP',
+    link: 'https://example.com/project3', 
   },
   {
     id: 4,
-    gif: 'https://example.com/project4.gif',
-    title: 'FACHWERKHAUS',
-    description: 'TEXT',
+    gif: 'https://i.imgur.com/uti9qV8.png',
+    title: 'PORTFOLIO. Template1',
+    description: 'This is the first look at the portfolio, in my mind I did it as a taplink. Here it is assembled and ready to upload to hosting, you can change the text and links.',
     stack: 'React, SASS',
-    link: 'https://example.com/project4', // Ссылка на проект
+    link: 'https://github.com/awwwdde/PORTFOLIO1', 
   },
 ];
 
