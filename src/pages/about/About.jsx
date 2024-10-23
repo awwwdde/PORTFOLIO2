@@ -4,11 +4,12 @@ import logo from '../../graphics/images/logo.svg'; // Импортируем л�
 import SphereBackground from '../../components/bg/SphereBackground';
 import Ablock from '../../components/about block/ablock';
 import Cblock from '../../components/contact block/cblock';
+import PBlock from '../../components/portfolio block/pblock';
 const About = () => {
   // Массивы с текстом и названиями меню
   const texts = [
     <Ablock/>,
-    "My portfolio",
+    <PBlock/>,
     <Cblock/>
   ];
 

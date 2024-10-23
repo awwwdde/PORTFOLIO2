@@ -1,0 +1,71 @@
+.projectsContainer {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+    padding: 20px; /* Внутренние отступы */
+    background: transparent; /* Убираем задний фон */
+  }
+  
+  .projects {
+    display: flex; /* Используем flexbox для размещения проектов */
+    flex-direction: column; /* Вертикальное размещение */
+    gap: 20px; /* Промежутки между проектами */
+    background: transparent;
+  }
+  
+  .projectCard {
+    display: flex; /* Используем flexbox для размещения содержимого карточки */
+    padding: 10px; /* Внутренние отступы карточки */
+    transition: transform 0.2s; /* Плавный эффект при наведении */
+    background: transparent;
+  }
+  
+  .projectCard:hover {
+    transform: scale(1.02); /* Увеличение при наведении */
+  }
+  
+  .projectGif {
+    width: 300px; /* Уменьшаем размер изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    margin-right: 20px; /* Отступ справа от изображения */
+  }
+  
+  .projectInfo {
+    flex: 1; /* Занимает оставшееся пространство */
+  }
+
+  
+  .pagination {
+    margin-top: 20px; /* Отступ сверху для пагинации */
+    display: flex; /* Используем flexbox для размещения ссылок */
+    justify-content: space-between; /* Распределяем ссылки по краям */
+  }
+  
+  .paginationLink {
+    color: #007bff; /* Цвет ссылки */
+    cursor: pointer; /* Курсор при наведении */
+    text-decoration: underline; /* Подчеркивание текста */
+  }
+  
+  .paginationLink:hover {
+    color: #0056b3; /* Цвет ссылки при наведении */
+  }
+  
+  /* Адаптивные стили */
+  @media (max-width: 600px) {
+    .projectGif {
+      width: 80px; /* Уменьшаем размер изображения на маленьких экранах */
+    }
+  
+    .projectsContainer {
+      padding: 10px; /* Уменьшаем отступы на маленьких экранах */
+    }
+  
+    .projectCard {
+      flex-direction: column; /* Вертикальное размещение содержимого карточки */
+      align-items: center; /* Центрируем содержимое карточки */
+    }
+  
+    .projectInfo {
+      text-align: center; /* Центрируем текст */
+    }
+  }
