@@ -5,7 +5,7 @@
     background: transparent; /* Убираем задний фон */
   
     h2 {
-        background: transparent;
+      background: transparent;
       text-align: center; /* Центрируем заголовок */
     }
   }
@@ -17,19 +17,21 @@
     transition: transform 0.2s; /* Плавный эффект при наведении */
     background: transparent;
     align-items: center; /* Центрируем содержимое карточки */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    color: inherit; /* Наследуем цвет текста */
   
     img {
-        background: transparent;
+      background: transparent;
       border-radius: 25px;
       width: 100%; /* Уменьшаем размер изображения */
-      height: 100%; /* Автоматическая высота для сохранения пропорций */
+      height: auto; /* Автоматическая высота для сохранения пропорций */
       margin: 10px 0; /* Отступ сверху и снизу от изображения */
     }
   
     .projectInfo {
       text-align: left; /* Центрируем текст */
       background: transparent;
-      
+  
       h3 {
         background-color: transparent;
         margin: 5px 0; /* Отступы между заголовком и текстом */
@@ -38,7 +40,7 @@
       p {
         background-color: transparent;
         font-size: 14px; /* Уменьшаем размер текста */
-        margin: 5px  0; /* Отступы между строками текста */
+        margin: 5px 0; /* Отступы между строками текста */
       }
   
       .projectStack {
@@ -54,6 +56,7 @@
     display: flex; /* Используем flex box для размещения кнопок */
     justify-content: space-between; /* Распределяем кнопки по краям */
     background: transparent;
+  
     .paginationButton {
       cursor: pointer; /* Курсор при наведении */
       background: transparent;
@@ -70,11 +73,25 @@
   
   /* Адаптивные стили */
   @media (max-width: 600px) {
+    .projectCard {
+      padding: 5px; /* Уменьшаем отступы карточки на маленьких экранах */
+    }
+  
+    .projectInfo {
+      text-align: center; /* Центрируем текст на мобильных устройствах */
+    }
+  
     .projectGif {
-      width: 80px; /* Уменьшаем размер изображения на маленьких экранах */
+      width: 100%; /* Увеличиваем ширину изображения на мобильных экранах */
+      height: auto; /* Автоматическая высота для сохранения пропорций */
     }
   
     .projectsContainer {
       padding: 10px; /* Уменьшаем отступы на маленьких экранах */
+    }
+  
+    .paginationButton {
+      font-size: 14px; /* Уменьшаем размер текста кнопок на мобильных устройствах */
+      padding: 5px; /* Уменьшаем отступы кнопок */
     }
   }
