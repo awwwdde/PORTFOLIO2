@@ -5,18 +5,18 @@ const projectsData = [
   {
     id: 1,
     gif: 'https://i.imgur.com/EtVyUj0.png',
-    title: 'Awwwdde Logo',
+    title: 'AWWWDDE. Logo',
     description: 'The logo created for my portfolio, as well as to represent my work, includes the first two letters of my nickname: A and W.',
     stack: 'AI, PH',
     link: 'https://dribbble.com/shots/25041571-awwwdde-Personal-Logo', // Ссылка на проект
   },
   {
     id: 2,
-    gif: 'https://i.imgur.com/q9uph1T.png',
-    title: 'ASKBROWS',
-    description: 'A website created specifically for master eyebrow artist as well as master eyelash extensions',
-    stack: 'React, SASS',
-    link: 'https://github.com/awwwdde/ASKBROWS', // Ссылка на проект
+    gif: 'https://i.imgur.com/m3w8M4I.png',
+    title: 'AWWWDDE. Portfolio website',
+    description: 'This site I created and am still creating for my portfolio and also to pump up my skills, it includes different styles as I am learning new things.',
+    stack: 'React, SASS, threejs',
+    link: 'https://github.com/awwwdde/awwwdde-portfolio-2', // Ссылка на проект
   },
   {
     id: 3,
