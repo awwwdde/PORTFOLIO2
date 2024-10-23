@@ -5,11 +5,11 @@ const Ablock = () => {
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>About me</h2>
-            <img 
+            {/* <img 
                 src="https://i.imgur.com/5TL9oBl.gif" 
                 alt="Description of the image" 
                 className={styles.image} 
-            />
+            /> */}
             <p className={styles.text}>
                 Hello! My name is Vladislav, and as you may have guessed, I am a Front End developer! 
                 Let me tell you a little about how I got here. It all started when I was around 12-13 years old, 
