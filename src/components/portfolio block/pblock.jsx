@@ -8,6 +8,7 @@ const projectsData = [
     title: 'Awwwdde Logo',
     description: 'The logo created for my portfolio, as well as to represent my work, includes the first two letters of my nickname: A and W.',
     stack: 'AI, PH',
+    link: 'https://dribbble.com/shots/25041571-awwwdde-Personal-Logo', // Ссылка на проект
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const projectsData = [
     title: 'ASKBROWS',
     description: 'TEXT',
     stack: 'React, SASS',
+    link: 'https://example.com/project2', // Ссылка на проект
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const projectsData = [
     title: '26STUDIO design',
     description: 'DEsign',
     stack: 'Pixso, Figma, AI',
+    link: 'https://example.com/project3', // Ссылка на проект
   },
   {
     id: 4,
@@ -29,47 +32,48 @@ const projectsData = [
     title: 'FACHWERKHAUS',
     description: 'TEXT',
     stack: 'React, SASS',
+    link: 'https://example.com/project4', // Ссылка на проект
   },
 ];
 
 const PBlock = () => {
-  const [currentPage, setCurrentPage] = useState(0 );
-  const projectsPerPage = 2;
-  const totalPages = Math.ceil(projectsData.length / projectsPerPage);
+  const [currentPage, setCurrentPage] = useState(0);
+  const totalPages = projectsData.length;
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
+  const handleNext = () => {
+    if (currentPage < totalPages - 1) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handleBack = () => {
+    if (currentPage > 0) {
+      setCurrentPage(currentPage - 1);
+    }
   };
 
   return (
     <div className={styles.projectsContainer}>
-      My Portfolio
-      <div className={styles.projects}>
-        {projectsData
-          .slice(currentPage * projectsPerPage, (currentPage + 1) * projectsPerPage)
-          .map((project) => (
-            <div key={project.id} className={styles.projectCard}>
-              <img src={project.gif} alt={project.title} className={styles.projectGif} />
-              <div className={styles.projectInfo}>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <p className={styles.projectStack}>{project.stack}</p>
-              </div>
-            </div>
-          ))}
-      </div>
+      <h2>My Portfolio</h2>
+      <a href={projectsData[currentPage].link} target="_blank" rel="noopener noreferrer" className={styles.projectCard}>
+        <img src={projectsData[currentPage].gif} alt={projectsData[currentPage].title} className={styles.projectGif} />
+        <div className={styles.projectInfo}>
+          <h3>{projectsData[currentPage].title}</h3>
+          <p>{projectsData[currentPage].description}</p>
+          <p className={styles.projectStack}>{projectsData[currentPage].stack}</p>
+        </div>
+      </a>
       <div className={styles.pagination}>
-        {Array(totalPages)
-          .fill(0)
-          .map((_, index) => (
-            <span
-              key={index}
-              className={styles.paginationLink}
-              onClick={() => handlePageChange(index)}
-            >
-              {index + 1}
-            </span>
-          ))}
+        {currentPage > 0 && (
+          <button className={styles.paginationButton} onClick={handleBack}>
+            Back
+          </button>
+        )}
+        {currentPage < totalPages - 1 && (
+          <button className={styles.paginationButton} onClick={handleNext}>
+            Next
+          </button>
+        )}
       </div>
     </div>
   );
