@@ -4,7 +4,7 @@ import styles from './Pblock.module.scss';
 const projectsData = [
   {
     id: 1,
-    gif: 'https://i.imgur.com/q9uph1T.png',
+    gif: 'https://i.imgur.com/EtVyUj0.png',
     title: 'Awwwdde Logo',
     description: 'The logo created for my portfolio, as well as to represent my work, includes the first two letters of my nickname: A and W.',
     stack: 'AI, PH',
@@ -12,11 +12,11 @@ const projectsData = [
   },
   {
     id: 2,
-    gif: 'https://example.com/project2.gif',
+    gif: 'https://i.imgur.com/q9uph1T.png',
     title: 'ASKBROWS',
-    description: 'TEXT',
+    description: 'A website created specifically for master eyebrow artist as well as master eyelash extensions',
     stack: 'React, SASS',
-    link: 'https://example.com/project2', // Ссылка на проект
+    link: 'https://github.com/awwwdde/ASKBROWS', // Ссылка на проект
   },
   {
     id: 3,

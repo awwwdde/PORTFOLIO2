@@ -19,6 +19,7 @@
     align-items: center; /* Центрируем содержимое карточки */
   
     img {
+        background: transparent;
       border-radius: 25px;
       width: 100%; /* Уменьшаем размер изображения */
       height: 100%; /* Автоматическая высота для сохранения пропорций */
